@@ -1,0 +1,179 @@
+/* Base styles with a subtle cat theme */
+:root {
+  --plaid-primary: #7c5295; /* A warm purple */
+  --plaid-secondary: #95527c; /* A complementary rose */
+  --plaid-accent: #527c95; /* A calming blue */
+  --cat-paw-pink: #ffd6e0;
+  --whisker-gray: #f5f5f5;
+}
+
+.praxis-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--whisker-gray);
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 20px,
+      rgba(124, 82, 149, 0.03) 20px,
+      rgba(124, 82, 149, 0.03) 40px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 20px,
+      rgba(149, 82, 124, 0.03) 20px,
+      rgba(149, 82, 124, 0.03) 40px
+    );
+}
+
+.banner {
+  background-color: var(--plaid-primary);
+  background-image: 
+    linear-gradient(
+      90deg,
+      transparent 47%,
+      rgba(255, 255, 255, 0.1) 49%,
+      rgba(255, 255, 255, 0.1) 51%,
+      transparent 53%
+    ),
+    linear-gradient(
+      0deg,
+      transparent 47%,
+      rgba(255, 255, 255, 0.1) 49%,
+      rgba(255, 255, 255, 0.1) 51%,
+      transparent 53%
+    );
+  background-size: 50px 50px;
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* Cute cat paw accent on the banner corners */
+.banner::before,
+.banner::after {
+  content: '🐾';
+  position: absolute;
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.banner::before {
+  left: 20px;
+  top: 10px;
+}
+
+.banner::after {
+  right: 20px;
+  bottom: 10px;
+  transform: rotate(45deg);
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title-section {
+  flex: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+  margin: 5px 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.score-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.score-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.score-label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.score-value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--cat-paw-pink);
+  transition: width 0.3s ease;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 20px 20px;
+  animation: progress-purr 2s linear infinite;
+}
+
+@keyframes progress-purr {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Add a subtle paw print cursor */
+button, 
+.score-section {
+  cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%237c5295' d='M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm4.5 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm-9 0c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm4.5 6c3.31 0 6 2.69 6 6H6c0-3.31 2.69-6 6-6z'/%3E%3C/svg%3E"), pointer;
+}
