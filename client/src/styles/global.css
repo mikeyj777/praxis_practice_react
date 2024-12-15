@@ -8,3 +8,4 @@ import and include all other component stylesheets for reference */
 @import './BiologyHeader.css';
 @import './UI.css';
 @import './Quiz.css';
+@import './QuestionStats.css';

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import BiologyHeader from './BiologyHeader';
+import StatsButton from './ui/StatsButton';
 
 const PraxisTest = ({ subject = "Biology", totalQuestions = 150, children }) => {
   const [score, setScore] = useState({
@@ -47,6 +48,7 @@ const PraxisTest = ({ subject = "Biology", totalQuestions = 150, children }) => 
             </div>
           </div>
         </div>
+        <StatsButton />
       </div>
 
       {/* Main Content Section */}

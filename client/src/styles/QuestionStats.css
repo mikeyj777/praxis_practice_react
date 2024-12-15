@@ -1,0 +1,140 @@
+/* Container Styles */
+.question-stats {
+  padding: 0;
+  background-color: var(--whisker-gray);
+  width: 100%;
+}
+
+.stats-grid {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  padding: 4px;  /* Prevent shadow cutoff */
+}
+
+/* Card Styles */
+.topic-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(124, 82, 149, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(124, 82, 149, 0.15);
+  border-color: var(--plaid-primary);
+}
+
+.topic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(124, 82, 149, 0.1);
+}
+
+.topic-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--plaid-primary);
+}
+
+.topic-total {
+  font-size: 14px;
+  color: #666;
+  background-color: var(--whisker-gray);
+  padding: 4px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(124, 82, 149, 0.1);
+}
+
+/* Histogram Styles */
+.histogram {
+  height: 150px;
+  padding: 20px 0 10px;
+  position: relative;
+}
+
+.histogram-bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  padding: 0 10px;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+
+.histogram-bar-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 0 4px;
+  position: relative;
+  min-width: 40px;
+}
+
+.histogram-bar {
+  width: 100%;
+  max-width: 30px;
+  background-color: var(--plaid-primary);
+  border-radius: 4px 4px 0 0;
+  min-height: 1px;
+  position: relative;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 20px 20px;
+  box-shadow: 0 2px 4px rgba(124, 82, 149, 0.1);
+}
+
+/* Add hover effect to bars */
+.histogram-bar:hover {
+  background-color: var(--plaid-secondary);
+  box-shadow: 0 3px 6px rgba(124, 82, 149, 0.2);
+}
+
+.histogram-value {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #333;
+  background-color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(124, 82, 149, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+/* Add hover effect to values */
+.histogram-bar:hover + .histogram-value,
+.histogram-value:hover {
+  transform: translateX(-50%) scale(1.1);
+  background-color: var(--whisker-gray);
+}
+
+.histogram-label {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
