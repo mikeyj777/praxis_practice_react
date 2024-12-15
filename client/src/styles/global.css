@@ -6,3 +6,5 @@ import and include all other component stylesheets for reference */
 @import './Home.css';
 @import './Praxis.css';
 @import './BiologyHeader.css';
+@import './UI.css';
+@import './Quiz.css';
