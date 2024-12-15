@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import BiologyHeader from './BiologyHeader';
 
-const PraxisTest = ({ subject, totalQuestions = 0, children }) => {
+const PraxisTest = ({ subject = "Biology", totalQuestions = 150, children }) => {
   const [score, setScore] = useState({
     correct: 0,
     attempted: 0
@@ -12,7 +13,7 @@ const PraxisTest = ({ subject, totalQuestions = 0, children }) => {
   };
 
   return (
-    <div className="praxis-container">
+    <div className="praxis-container theme-cat">
       {/* Banner Section */}
       <div className="banner">
         <div className="banner-content">
@@ -50,6 +51,11 @@ const PraxisTest = ({ subject, totalQuestions = 0, children }) => {
 
       {/* Main Content Section */}
       <div className="content">
+        <BiologyHeader 
+          onTopicChange={(topic) => {
+            console.log(`Loading questions for topic: ${topic}`);
+          }}
+        />
         {children && typeof children === 'function' 
           ? children({ score, updateScore })
           : children}
