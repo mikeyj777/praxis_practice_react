@@ -1,5 +1,6 @@
 import { useState } from 'react'; 
-import { questions, BIOLOGY_TOPICS } from '../utils/topicsAndQuestions';
+import BIOLOGY_TOPICS from '../utils/topics';
+import { questions } from '../utils/questions';
 import Quiz from './Quiz';
 
 

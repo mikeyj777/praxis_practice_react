@@ -94,7 +94,7 @@ const Quiz = ({ questions, subject = 'biology', selectedTopic='mixed'}) => {
                 ))}
               </div>
 
-              {answerState && !answerState.isCorrect && (
+              {answerState && (
                 <button
                   onClick={() => setShowDetail(question.detail || 'Additional explanation coming soon...')}
                   className="show-more"
