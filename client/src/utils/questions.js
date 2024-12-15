@@ -1,5 +1,8 @@
 export const questions = [
-  // NOTE TO CLAUDE - the wrong answers should have roughly the same number of words as the right answer.  
+  /* NOTES TO CLAUDE - the wrong answers should have roughly the same number of words as the right answer. 
+     difficulty level - 1 is easiest.  5 is hardest.
+     wrong answers should have roughly the same length as right answers.
+  */ 
   {
     subject: "biology",
     question: "What is the key difference between a hypothesis and a scientific theory?",
@@ -142,5 +145,201 @@ export const questions = [
   detail: "Sample size is a critical factor in research design that affects the reliability and generalizability of results. Small samples can be misleading because they're more susceptible to random variation and outliers. For example, flipping a coin 10 times might give 7 heads and 3 tails (70% heads), but flipping it 1000 times will likely give closer to 50% heads. In biological studies, larger samples help account for natural variation between individuals. However, practical constraints like cost, time, and availability of subjects often limit sample size. Statistical power analysis helps researchers determine the minimum sample size needed to detect meaningful effects. While larger samples generally provide more reliable results, quality of data collection and appropriate sampling methods remain crucial.",
   difficulty: 2,
   topic: "nature-of-science"
-}
+},
+{
+  subject: "biology",
+  question: "What is the primary function of the plasma membrane in a cell?",
+  answer: "The plasma membrane regulates material movement into and out of the cell through selective permeability, maintaining cellular homeostasis while allowing necessary substance transport.",
+  wrongAnswers: [
+    "The plasma membrane generates cellular energy through active protein channels, controlling metabolic processes while facilitating continuous nutrient production within the cell.",
+    "The plasma membrane synthesizes essential proteins through membrane-bound ribosomes, maintaining cellular structure while coordinating all internal molecular processes.",
+    "The plasma membrane stores genetic information through specialized phospholipid structures, controlling cell division while protecting DNA from environmental damage."
+  ],
+  detail: "The plasma membrane, or cell membrane, is a phospholipid bilayer with embedded proteins that forms the boundary of all cells. Its selective permeability is crucial for life, allowing cells to maintain different internal and external concentrations of substances. Transport across the membrane occurs through various mechanisms: passive transport (diffusion and facilitated diffusion) requires no energy and moves substances down their concentration gradients, while active transport uses ATP to move substances against their concentration gradients. The membrane's fluid mosaic model explains how its structure enables both stability and flexibility, with phospholipids providing the basic barrier and proteins serving as channels, pumps, receptors, and structural elements.",
+  difficulty: 2,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "How do enzymes facilitate biochemical reactions in cells?",
+  answer: "Enzymes lower activation energy by providing specific substrate binding sites and stabilizing transition states, dramatically increasing reaction rates without being consumed in the process.",
+  wrongAnswers: [
+    "Enzymes create chemical energy by breaking down cellular molecules and releasing stored ATP, dramatically increasing energy availability without requiring oxygen.",
+    "Enzymes generate new molecules by combining random substrates and forming permanent bonds, dramatically increasing cellular material without depleting resources.",
+    "Enzymes transfer genetic information by copying DNA sequences and modifying proteins, dramatically increasing cellular diversity without changing the original code."
+  ],
+  detail: "Enzymes are biological catalysts that are essential for life, making possible in milliseconds reactions that might otherwise take years. They work by temporarily binding to substrates at their active sites, which have shapes and chemical properties specifically complementary to their target molecules. This binding helps bring reactants together and stabilizes the transition state, reducing the activation energy needed for the reaction. Enzyme activity is affected by temperature, pH, substrate concentration, and the presence of inhibitors or activators. Most enzymes are proteins, though some RNA molecules (ribozymes) can also act as enzymes. The lock-and-key and induced fit models help explain enzyme specificity, while allosteric regulation allows cells to control enzyme activity based on their needs.",
+  difficulty: 3,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What role does ATP synthase play in cellular respiration?",
+  answer: "ATP synthase harnesses the energy from proton gradients to mechanically rotate and combine ADP with phosphate, producing ATP through chemiosmosis in mitochondria.",
+  wrongAnswers: [
+    "ATP synthase breaks down glucose molecules to extract chemical energy and combine oxygen with hydrogen, producing ATP through direct substrate conversion.",
+    "ATP synthase transfers electrons through membrane proteins to split water molecules, producing ATP through photochemical reactions in chloroplasts.",
+    "ATP synthase transforms nuclear energy into chemical bonds to merge carbon dioxide with water, producing ATP through radioactive decay processes."
+  ],
+  detail: "ATP synthase is a remarkable molecular machine that acts as the final step in cellular respiration's energy production. Located in the inner mitochondrial membrane (and chloroplast thylakoid membrane in plants), it consists of two main parts: the F0 portion embedded in the membrane and the F1 portion extending into the matrix. The enzyme works like a turbine powered by protons. The electron transport chain creates a proton gradient across the membrane, and as these protons flow through ATP synthase, they cause it to rotate. This mechanical rotation forces ADP and phosphate together to form ATP. This process, called chemiosmosis, produces most of a cell's ATP, making ATP synthase crucial for cellular energy production.",
+  difficulty: 4,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "How do vesicles contribute to cellular transport and organization?",
+  answer: "Vesicles transport materials between cellular compartments by budding off from source membranes and fusing with target membranes, maintaining organelle identity and directing protein trafficking.",
+  wrongAnswers: [
+    "Vesicles generate new cellular proteins by combining amino acids and ribosomes, maintaining protein production and directing metabolic processes in the cytoplasm.",
+    "Vesicles create energy storage compartments by synthesizing lipids and carbohydrates, maintaining fuel reserves and directing nutrient distribution throughout cells.",
+    "Vesicles protect genetic material by isolating DNA and RNA molecules, maintaining chromosome structure and directing gene expression in the nucleus."
+  ],
+  detail: "Vesicles are small, membrane-bounded compartments that play crucial roles in cellular transport and organization. They are essential for the secretory pathway, moving proteins from the endoplasmic reticulum through the Golgi apparatus and to their final destinations. Vesicles also participate in endocytosis, bringing materials into the cell, and exocytosis, releasing materials from the cell. The formation of vesicles involves specific proteins like clathrin and COPI/COPII coats, while their targeting and fusion require SNARE proteins and other molecular markers. This system allows cells to maintain distinct organelle identities while enabling communication between compartments. Disorders in vesicular transport can lead to various diseases, highlighting the importance of this cellular machinery.",
+  difficulty: 3,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What is the significance of the cell cycle checkpoints?",
+  answer: "Cell cycle checkpoints monitor critical conditions and halt progression if problems are detected, ensuring accurate DNA replication and chromosome segregation during cell division.",
+  wrongAnswers: [
+    "Cell cycle checkpoints generate new cellular materials and initiate protein synthesis, ensuring continuous growth and development during metabolic processes.",
+    "Cell cycle checkpoints regulate energy production and distribute ATP molecules, ensuring efficient metabolism and respiration during cellular activities.",
+    "Cell cycle checkpoints coordinate membrane transport and direct vesicle movement, ensuring proper organization and communication during cellular processes."
+  ],
+  detail: "Cell cycle checkpoints are crucial quality control mechanisms that prevent cells from proceeding through division if conditions aren't optimal. There are three main checkpoints: G1 (checking cell size and environmental conditions), G2 (verifying DNA replication completion and cell growth), and the metaphase checkpoint (ensuring proper chromosome attachment to spindle fibers). These checkpoints involve complex molecular pathways, including cyclins, cyclin-dependent kinases, and regulatory proteins like p53. If problems are detected, checkpoint proteins can halt the cycle and activate repair mechanisms or trigger apoptosis if damage is too severe. Dysfunction in checkpoint regulation is a hallmark of cancer, leading to uncontrolled cell division. Understanding these checkpoints has been crucial for developing cancer treatments.",
+  difficulty: 3,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What is the basic structure of a cell membrane?",
+  answer: "A cell membrane consists of a phospholipid bilayer with embedded proteins, creating a flexible barrier that separates the cell from its environment.",
+  wrongAnswers: [
+    "A cell membrane consists of a rigid carbohydrate layer with floating lipids, creating a solid barrier that permanently seals the cell interior.",
+    "A cell membrane consists of a protein matrix with scattered phosphates, creating a static barrier that filters all molecules by size only.",
+    "A cell membrane consists of a single lipid layer with fixed channels, creating a permanent barrier that controls all cellular movement."
+  ],
+  detail: "The cell membrane, also called the plasma membrane, follows the fluid mosaic model. The phospholipid bilayer forms because phospholipids are amphipathic - they have hydrophilic (water-loving) heads and hydrophobic (water-fearing) tails. The membrane is fluid, allowing components to move laterally, which is essential for cell function. Proteins embedded in or attached to the membrane serve various functions including transport, cell recognition, and enzymatic activity. Cholesterol molecules help maintain membrane fluidity. This structure allows cells to maintain their internal environment while still interacting with their surroundings.",
+  difficulty: 1,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What is the main function of the nucleus in a cell?",
+  answer: "The nucleus stores and protects genetic material in the form of DNA, controlling gene expression and chromosome organization during cell division.",
+  wrongAnswers: [
+    "The nucleus produces energy through cellular respiration, controlling metabolism and oxygen consumption during cellular activities.",
+    "The nucleus breaks down waste products from the cell, controlling toxin removal and molecule recycling during cellular processes.",
+    "The nucleus synthesizes all proteins for the cell, controlling nutrient processing and enzyme production during growth phases."
+  ],
+  detail: "The nucleus is often called the control center of the cell because it contains the cell's genetic instructions in the form of DNA. It's surrounded by a double membrane called the nuclear envelope, which has nuclear pores that regulate the movement of molecules between the nucleus and cytoplasm. Inside the nucleus, DNA is organized into chromosomes, and the nucleolus is where ribosomal RNA is synthesized. During cell division, the nuclear envelope breaks down to allow chromosome separation. The nucleus also contains enzymes and proteins necessary for DNA replication, transcription, and the initial stages of gene expression.",
+  difficulty: 1,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What are ribosomes and what do they do?",
+  answer: "Ribosomes are cellular structures that read messenger RNA and assemble amino acids into proteins, serving as the cell's protein production factories.",
+  wrongAnswers: [
+    "Ribosomes are cellular structures that create new DNA molecules and copy genetic material, serving as the cell's genome duplicators.",
+    "Ribosomes are cellular structures that store energy and produce ATP, serving as the cell's power generation centers.",
+    "Ribosomes are cellular structures that break down old proteins and recycle nutrients, serving as the cell's waste management."
+  ],
+  detail: "Ribosomes are complex molecular machines made of both protein and RNA (called ribosomal RNA or rRNA). They can be found free in the cytoplasm or attached to the endoplasmic reticulum. During protein synthesis, ribosomes read the genetic instructions carried by messenger RNA (mRNA) and use transfer RNA (tRNA) to bring in the correct amino acids, linking them together in the right order. This process is called translation. Ribosomes can work individually or in groups called polyribosomes when producing multiple copies of the same protein. They are essential for cell survival, which is why many antibiotics target bacterial ribosomes.",
+  difficulty: 1,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What is the role of the cytoplasm in cells?",
+  answer: "Cytoplasm provides a fluid environment where cellular components float and move, supporting chemical reactions and transport within the cell.",
+  wrongAnswers: [
+    "Cytoplasm generates electrical signals and nerve impulses, coordinating cellular communication and response to stimuli.",
+    "Cytoplasm produces new cell membranes and organelles, directing growth and division of cellular structures.",
+    "Cytoplasm stores genetic information and chromosomes, protecting DNA during cellular reproduction."
+  ],
+  detail: "Cytoplasm is the gel-like substance that fills the cell between the nuclear envelope and cell membrane. It consists mainly of water (about 80%) along with dissolved nutrients, ions, proteins, and other molecules. The cytoplasm helps distribute materials throughout the cell and provides an appropriate environment for many cellular reactions. It contains the cytosol (the fluid portion) and organelles suspended within it. The cytoplasm's consistency can change through cytoplasmic streaming, which helps move materials around the cell. It also contains a network of protein fibers called the cytoskeleton that helps maintain cell shape and assists with internal movement of materials.",
+  difficulty: 1,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What is the basic function of the cell wall in plant cells?",
+  answer: "The cell wall provides structural support and protection, maintaining cell shape and preventing over-expansion when the cell takes in water.",
+  wrongAnswers: [
+    "The cell wall produces energy through photosynthesis, capturing sunlight and converting it into glucose for the plant.",
+    "The cell wall controls genetic expression, regulating which genes are active during plant development and growth.",
+    "The cell wall creates new proteins, assembling amino acids into essential enzymes for plant survival."
+  ],
+  detail: "The plant cell wall is a rigid layer outside the cell membrane composed primarily of cellulose fibers. Unlike the cell membrane, it is relatively inflexible and porous. The primary cell wall forms during cell growth and can expand, while secondary cell walls develop in some cells after growth is complete, providing additional strength. The cell wall's strength helps plants stay upright without skeletal systems and prevents cells from bursting due to osmotic pressure when they take up water. It also helps protect against pathogens and allows for pressure to build up inside cells (turgor pressure), which is essential for plant structure and growth.",
+  difficulty: 1,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What is the basic structure of a cell membrane?",
+  answer: "A cell membrane consists of a phospholipid bilayer with embedded proteins, creating a flexible barrier that separates the cell from its environment.",
+  wrongAnswers: [
+    "A cell membrane consists of a rigid carbohydrate layer with floating lipids, creating a solid barrier that permanently seals the cell interior.",
+    "A cell membrane consists of a protein matrix with scattered phosphates, creating a static barrier that filters all molecules by size only.",
+    "A cell membrane consists of a single lipid layer with fixed channels, creating a permanent barrier that controls all cellular movement."
+  ],
+  detail: "The cell membrane, also called the plasma membrane, follows the fluid mosaic model. The phospholipid bilayer forms because phospholipids are amphipathic - they have hydrophilic (water-loving) heads and hydrophobic (water-fearing) tails. The membrane is fluid, allowing components to move laterally, which is essential for cell function. Proteins embedded in or attached to the membrane serve various functions including transport, cell recognition, and enzymatic activity. Cholesterol molecules help maintain membrane fluidity. This structure allows cells to maintain their internal environment while still interacting with their surroundings.",
+  difficulty: 1,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What is the main function of the nucleus in a cell?",
+  answer: "The nucleus stores and protects genetic material in the form of DNA, controlling gene expression and chromosome organization during cell division.",
+  wrongAnswers: [
+    "The nucleus produces energy through cellular respiration, controlling metabolism and oxygen consumption during cellular activities.",
+    "The nucleus breaks down waste products from the cell, controlling toxin removal and molecule recycling during cellular processes.",
+    "The nucleus synthesizes all proteins for the cell, controlling nutrient processing and enzyme production during growth phases."
+  ],
+  detail: "The nucleus is often called the control center of the cell because it contains the cell's genetic instructions in the form of DNA. It's surrounded by a double membrane called the nuclear envelope, which has nuclear pores that regulate the movement of molecules between the nucleus and cytoplasm. Inside the nucleus, DNA is organized into chromosomes, and the nucleolus is where ribosomal RNA is synthesized. During cell division, the nuclear envelope breaks down to allow chromosome separation. The nucleus also contains enzymes and proteins necessary for DNA replication, transcription, and the initial stages of gene expression.",
+  difficulty: 1,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What are ribosomes and what do they do?",
+  answer: "Ribosomes are cellular structures that read messenger RNA and assemble amino acids into proteins, serving as the cell's protein production factories.",
+  wrongAnswers: [
+    "Ribosomes are cellular structures that create new DNA molecules and copy genetic material, serving as the cell's genome duplicators.",
+    "Ribosomes are cellular structures that store energy and produce ATP, serving as the cell's power generation centers.",
+    "Ribosomes are cellular structures that break down old proteins and recycle nutrients, serving as the cell's waste management."
+  ],
+  detail: "Ribosomes are complex molecular machines made of both protein and RNA (called ribosomal RNA or rRNA). They can be found free in the cytoplasm or attached to the endoplasmic reticulum. During protein synthesis, ribosomes read the genetic instructions carried by messenger RNA (mRNA) and use transfer RNA (tRNA) to bring in the correct amino acids, linking them together in the right order. This process is called translation. Ribosomes can work individually or in groups called polyribosomes when producing multiple copies of the same protein. They are essential for cell survival, which is why many antibiotics target bacterial ribosomes.",
+  difficulty: 1,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What is the role of the cytoplasm in cells?",
+  answer: "Cytoplasm provides a fluid environment where cellular components float and move, supporting chemical reactions and transport within the cell.",
+  wrongAnswers: [
+    "Cytoplasm generates electrical signals and nerve impulses, coordinating cellular communication and response to stimuli.",
+    "Cytoplasm produces new cell membranes and organelles, directing growth and division of cellular structures.",
+    "Cytoplasm stores genetic information and chromosomes, protecting DNA during cellular reproduction."
+  ],
+  detail: "Cytoplasm is the gel-like substance that fills the cell between the nuclear envelope and cell membrane. It consists mainly of water (about 80%) along with dissolved nutrients, ions, proteins, and other molecules. The cytoplasm helps distribute materials throughout the cell and provides an appropriate environment for many cellular reactions. It contains the cytosol (the fluid portion) and organelles suspended within it. The cytoplasm's consistency can change through cytoplasmic streaming, which helps move materials around the cell. It also contains a network of protein fibers called the cytoskeleton that helps maintain cell shape and assists with internal movement of materials.",
+  difficulty: 1,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What is the basic function of the cell wall in plant cells?",
+  answer: "The cell wall provides structural support and protection, maintaining cell shape and preventing over-expansion when the cell takes in water.",
+  wrongAnswers: [
+    "The cell wall produces energy through photosynthesis, capturing sunlight and converting it into glucose for the plant.",
+    "The cell wall controls genetic expression, regulating which genes are active during plant development and growth.",
+    "The cell wall creates new proteins, assembling amino acids into essential enzymes for plant survival."
+  ],
+  detail: "The plant cell wall is a rigid layer outside the cell membrane composed primarily of cellulose fibers. Unlike the cell membrane, it is relatively inflexible and porous. The primary cell wall forms during cell growth and can expand, while secondary cell walls develop in some cells after growth is complete, providing additional strength. The cell wall's strength helps plants stay upright without skeletal systems and prevents cells from bursting due to osmotic pressure when they take up water. It also helps protect against pathogens and allows for pressure to build up inside cells (turgor pressure), which is essential for plant structure and growth.",
+  difficulty: 1,
+  topic: "cell-biology"
+},
+
 ];
