@@ -1595,7 +1595,86 @@ export const questions = [
   detail: "Open-source approaches in biology parallel those in software development, emphasizing transparency and collaboration. This model has led to developments like OpenInsulin for affordable insulin production and standardized biological parts for synthetic biology. Benefits include accelerated innovation and broader access to scientific tools. However, challenges include maintaining quality control and sustainable development models. Understanding open-source principles helps researchers participate effectively in collaborative scientific communities.",
   difficulty: 5,
   topic: "science-tech"
-}
+},
+{
+  subject: "biology",
+  question: "What is a hypothesis in scientific research?",
+  answer: "A hypothesis is an educated prediction that can be tested through experiments or observations to determine if it is supported or not supported by evidence.",
+  wrongAnswers: [
+    "A hypothesis is a proven scientific fact that has been demonstrated through multiple experiments.",
+    "A hypothesis is the final conclusion reached after completing all possible research on a topic.",
+    "A hypothesis is a random guess about science that cannot be tested or verified."
+  ],
+  detail: "A hypothesis serves as a starting point for scientific investigation. It's developed based on prior knowledge or observations and must be testable using scientific methods. For example, if plants need sunlight to grow, a plant kept in darkness will grow less than one kept in light. The key is that hypotheses must be falsifiable - capable of being proven wrong through experimentation. Scientists use hypotheses to guide their research design and test their understanding of natural phenomena.",
+  difficulty: 1,
+  topic: "nature-of-science"
+},
+{
+  subject: "biology",
+  question: "What is the main function of the cell membrane?",
+  answer: "The cell membrane forms a selective barrier around the cell, controlling what substances can enter and exit while protecting the cell's internal components.",
+  wrongAnswers: [
+    "The cell membrane produces energy for the cell through photosynthesis.",
+    "The cell membrane stores genetic information and controls cell division.",
+    "The cell membrane breaks down food particles to release nutrients."
+  ],
+  detail: "The cell membrane, also called the plasma membrane, acts like a security guard for the cell, deciding what gets in and what stays out. It's made of a phospholipid bilayer with embedded proteins that help control movement across the membrane. Some substances like water can pass through directly, while others need special protein channels or carriers. This selective permeability is crucial for maintaining the cell's internal environment and protecting it from harmful substances.",
+  difficulty: 1,
+  topic: "cell-biology"
+},
+{
+  subject: "biology",
+  question: "What is the basic difference between dominant and recessive genes?",
+  answer: "Dominant genes express their trait when only one copy is present, while recessive genes only express their trait when two copies are present.",
+  wrongAnswers: [
+    "Dominant genes are always beneficial while recessive genes are always harmful.",
+    "Dominant genes come from mothers while recessive genes come from fathers.",
+    "Dominant genes work during the day while recessive genes work at night."
+  ],
+  detail: "The concept of dominant and recessive genes explains how traits are inherited and expressed. For example, in human eye color, brown is generally dominant over blue. This means a person with one brown allele and one blue allele will have brown eyes. Blue eyes only appear when a person inherits two blue alleles. This pattern helps explain why children sometimes have different traits than their parents.",
+  difficulty: 1,
+  topic: "genetics"
+},
+{
+  subject: "biology",
+  question: "What is the main difference between plants and animals?",
+  answer: "Plants make their own food through photosynthesis, while animals must consume other organisms to obtain energy.",
+  wrongAnswers: [
+    "Plants can move around while animals stay in one place.",
+    "Plants live in water while animals live on land.",
+    "Plants are always larger than animals."
+  ],
+  detail: "This fundamental difference in how plants and animals obtain energy shapes their entire biology. Plants are autotrophs, using sunlight, water, and carbon dioxide to produce glucose through photosynthesis. They have specialized structures like chloroplasts and leaves for this process. Animals are heterotrophs, needing to find and digest other organisms for energy. This basic distinction influences everything from their cell structure to their behavior and ecological roles.",
+  difficulty: 1,
+  topic: "diversity"
+},
+{
+  subject: "biology",
+  question: "What is a food chain in an ecosystem?",
+  answer: "A food chain shows how energy moves from one organism to another through feeding relationships, starting with producers and moving through consumers.",
+  wrongAnswers: [
+    "A food chain is a grocery store's supply network for fresh produce.",
+    "A food chain is how animals share meals with their friends.",
+    "A food chain is the process of cooking food in nature."
+  ],
+  detail: "Food chains show the flow of energy through an ecosystem. They typically start with producers like plants that make their own food through photosynthesis. These are eaten by primary consumers (herbivores), which are eaten by secondary consumers (carnivores). Each step is represented by an arrow showing the direction of energy transfer. For example: grass → rabbit → fox. This helps us understand how energy moves through an ecosystem and how organisms depend on each other.",
+  difficulty: 1,
+  topic: "ecology"
+},
+{
+  subject: "biology",
+  question: "How does a microscope help scientists study biology?",
+  answer: "A microscope magnifies tiny objects and organisms, allowing scientists to observe and study cells, microorganisms, and biological structures that are too small to see with the naked eye.",
+  wrongAnswers: [
+    "A microscope creates new life forms from basic chemicals.",
+    "A microscope automatically analyzes DNA sequences.",
+    "A microscope performs surgery on single cells."
+  ],
+  detail: "The microscope is a fundamental tool in biological research that lets scientists see the microscopic world. Light microscopes can magnify specimens up to 1000 times, revealing cell structures, bacteria, and small organisms. More advanced microscopes like electron microscopes can show even tinier details. This ability to see microscopic structures has been essential for understanding cell biology, microorganisms, and many biological processes that happen at a microscopic scale.",
+  difficulty: 1,
+  topic: "science-tech"
+},
+
 
 ];
 
